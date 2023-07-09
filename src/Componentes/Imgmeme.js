@@ -33,7 +33,7 @@ const Imgmeme = () =>{
             <h2>Escribí el texto</h2>
             <input onChange={textomeme} className='' type='text' placeholder= "Poné tu frase"/>
             <h2>Elegí la imagen</h2>
-            <select onChange={selectedImg}>
+            <select onChange={imagenmeme}>
               <option selected class="form-select" aria-label="Default select example">Seleccioná una imagen para tu meme</option>
               <option value={1}>A ustedes...?</option>
               <option value={2}>Futurama</option>
@@ -42,7 +42,7 @@ const Imgmeme = () =>{
             </select>
 
               <figure className='text-center' id='nuevomeme'>
-                <p className='h1 text-center'>{textomeme}</p>
+                <p className='h1 text-center'>{textmeme}</p>
                 <img src={`../fondos/${selectedImg}.jpeg`} alt=""/>
               </figure>
 
